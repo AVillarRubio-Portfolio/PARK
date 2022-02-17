@@ -1,0 +1,54 @@
+/////////////////////////
+//
+//  P.A.R.K.
+//  Pure Accurate Roller Coaster
+//  College Project
+//
+/////////////////////////
+
+///////////////////////
+//  Dependencies
+///////////////////////
+
+1.- Bullet3 v2.88 as Physics Engine
+2.- Cegui v0.8.7  as Graphic User Interface
+3.- Fmod as Audio Engine
+4.- jsonParser
+5.- Ogre3D v1.11.5 as Graphic Engine
+6.- O.I.S. v1.5 as Input System.
+7.- vld v.2.5.1
+
+///////////////////////
+// Compilation
+///////////////////////
+
+We used:
+	1.- CMake v3.14.0
+
+We heavily recommend you to follow the official guides to compile each dependencie.
+	Ogre3D: https://ogrecave.github.io/ogre/api/1.11/building-ogre.html
+	CEGUI: http://static.cegui.org.uk/docs/0.8.7/build_options.html
+	OIS: https://github.com/wgois/OIS
+	Bullet3: https://github.com/wolfviking0/webcl-bullet3
+
+CMake:
+	1.- Open the dependencie folder with the source code
+	2.- Setup a folder inside of it called "Build" to build the binaries into.
+	3.- Run Configure button to visualize all the possible options, once defined, run configure again.
+	4.- Choose only those needed for the project and correlated to Ogre3D.
+	5.- Run Generate for Visual Studio 2017 x64.
+
+Now go ahead to the "Build folder" and run the new Visual Studio Project.
+Run each project in Debug and Release Mode.
+Now the builds are done, save the build directory.
+
+/////////////////////
+// Building the project
+/////////////////////
+
+Clone or Download P.A.R.K. project from our GitHub: https://github.com/xBlacKnife/Proyecto-III
+Copy each Build folder inside it's own dependencie folder at ../Dependencies/
+In the case of Fmod, just add it to /Dependencies/
+Run the "setUpExesDir.bat" at ../ to move the binaries to the exes folder.
+Open the solution and redestinate the projects to your personal VS 2017 version.
+On each VS Project (Motor, Lógica, Main) link the header folders and libraries needed.

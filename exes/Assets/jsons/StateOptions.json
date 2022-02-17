@@ -1,0 +1,287 @@
+{
+  "Entities": [
+    {
+      "name": "Camera",
+      "Components": [
+        {
+          "name": "Camera"
+        },
+        {
+          "name": "Transform",
+          "position": {
+            "x": 0,
+            "y": 500,
+            "z": 50
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 3,
+            "z": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "name": "BackToMenuButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "onChangeState",
+          "parameter": "StateMainMenu",
+          "text": "BACK TO MENU",
+          "posX": 0.5,
+          "posY": 0.7,
+          "sizeX": 200,
+          "sizeY": 50,
+          "offsetX": -100,
+          "offsetY": 0
+        }
+      ]
+    },
+	{
+      "name": "SubirVolumenText",
+      "Components": 
+      [
+        {
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "Jura-18",
+          "text": " Volumen efectos",
+          "alignText": "Centre",
+          "backgroundEnabled": "False",
+          "textColor":
+          {
+            "topLeft": "F0000000",
+            "topRight": "F0000000",
+            "botLeft": "F0000000",
+            "botRight": "F0000000"
+          },
+          "posX": -0.40,
+          "posY": -0.1,
+          "sizeX": 300,
+          "sizeY": 50,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+	{
+      "name": "VolumeEffects",
+      "Components": [
+        {
+          "name": "FrameWindowBox",
+          "type": "Vanilla/FrameWindow",
+          "active": "True",
+          "closeEnabled": "False",
+          "parameter": "False",
+          "titleEnabled": "False",
+          "title": "SubirEfectos",
+          "font": "Carnevalee Freakshow-22",
+          "Hijos": [
+            {
+              "name": "SubirVolumenText"
+            }
+          ],
+          "posX": 0.410,
+          "posY": 0,
+          "sizeX": 170,
+          "sizeY": 100,
+          "offsetX": -10,
+          "offsetY": 0
+        }
+      ]
+    },
+	{
+      "name": "SubirMusicText",
+      "Components": 
+      [
+        {
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "Jura-18",
+          "text": " Volumen musica",
+          "alignText": "Centre",
+          "backgroundEnabled": "False",
+          "textColor":
+          {
+            "topLeft": "F0000000",
+            "topRight": "F0000000",
+            "botLeft": "F0000000",
+            "botRight": "F0000000"
+          },
+          "posX": -0.40,
+          "posY": -0.1,
+          "sizeX": 300,
+          "sizeY": 50,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+	{
+      "name": "VolumeMusica",
+      "Components": [
+        {
+          "name": "FrameWindowBox",
+          "type": "Vanilla/FrameWindow",
+          "active": "True",
+          "closeEnabled": "False",
+          "parameter": "False",
+          "titleEnabled": "False",
+          "title": "SubirEfectos",
+          "font": "Carnevalee Freakshow-22",
+          "Hijos": [
+            {
+              "name": "SubirMusicText"
+            }
+          ],
+          "posX": 0.410,
+          "posY": 0.3,
+          "sizeX": 170,
+          "sizeY": 100,
+          "offsetX": -10,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "UpEffectsVolumeButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "EffectVolumeChange",
+          "parameter": "+",
+          "text": "+",
+          "posX": 0.55,
+          "posY": 0.2,
+          "sizeX": 50,
+          "sizeY": 50,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "TextVolumeEffects",
+      "Components": 
+      [
+        { 
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-10",
+          "text": "10",
+          "alignText": "Centre",
+          "backgroundEnabled": "True",
+          "textColor": {
+              "topLeft": "FFFFFFFF",
+              "topRight": "FFFFFFFF",
+              "botLeft": "FFFFFFFF",
+              "botRight": "FFFFFFFF"
+           },
+          "posX": 0.47,
+          "posY": 0.2,
+          "sizeX": 50,
+          "sizeY": 50,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+	{
+      "name": "TextVolumeMusic",
+      "Components": 
+      [
+        { 
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-10",
+          "text": "10",
+          "alignText": "Centre",
+          "backgroundEnabled": "True",
+          "textColor": {
+              "topLeft": "FFFFFFFF",
+              "topRight": "FFFFFFFF",
+              "botLeft": "FFFFFFFF",
+              "botRight": "FFFFFFFF"
+           },
+          "posX": 0.47,
+          "posY": 0.5,
+          "sizeX": 50,
+          "sizeY": 50,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "DownEffectsVolumeButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "EffectVolumeChange",
+          "parameter": "-",
+          "text": "-",
+          "posX": 0.39,
+          "posY": 0.2,
+          "sizeX": 50,
+          "sizeY": 50,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },	
+    {
+      "name": "UpMusicVolumeButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "MusicVolumeChange",
+          "parameter": "+",
+          "text": "+",
+          "posX": 0.55,
+          "posY": 0.5,
+          "sizeX": 50,
+          "sizeY": 50,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "DownMusicVolumeButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "MusicVolumeChange",
+          "parameter": "-",
+          "text": "-",
+          "posX": 0.39,
+          "posY": 0.5,
+          "sizeX": 50,
+          "sizeY": 50,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+	 {
+      "name": "Background",
+      "Components": [
+        {
+          "name":  "BackgroundImage",
+          "ImageName": "OptionsBG.jpg"
+        }
+      ]
+    }
+  ]
+}

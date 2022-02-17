@@ -1,0 +1,446 @@
+{
+  "NPC": 
+  [
+        {
+		"name": "Transform",
+	    "parameters":
+		 {
+			"position": {
+				"x": 0,
+				"y": 10,
+				"z": 0
+			},
+			"scale":{
+				"x":2.5,
+				"y":2.5,
+				"z":2.5
+			}
+		  }
+        },
+        {
+          "name": "MeshRenderer",
+		  "parameters":
+		  {
+			"mesh": "NPC1.mesh",
+			"visible": true
+		  }
+        },
+        {
+          "name": "NPC",
+		  "parameters":
+		  {
+			  "speed": 1,
+			  "exigency": 2,
+			  "nameFile": "NPCNames.json",
+			   "stats": [
+			  {
+				"name": "Fun",
+				"value": 5,
+				"maxValue": 10,
+				"decreases": true
+			  },
+			  {
+				"name": "Hunger",
+				"value": 0,
+				"maxValue": 10,
+				"decreases": false
+			  },
+			  {
+				"name": "Peepee",
+				"value": 0,
+				"maxValue": 10,
+				"decreases": false
+			  }
+			  ]
+		   }
+        }
+  ],
+
+  "Camera": 
+  [
+    {
+      "name": "Camera"
+    },
+    {
+      "name": "Transform"
+    }
+  ],
+
+  "Terrain": 
+  [
+    {
+      "name": "Transform"
+    }
+  ],
+
+  "Node": 
+  [
+    {
+      "name": "Transform",
+      "parameters":
+      {
+          "position":
+          {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+      } 
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "Node.mesh",
+        "material": "Node",
+        "visible" : false
+      }
+    },
+    {
+      "name": "Node"
+    }
+  ],
+
+  "Road": 
+  [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "Road.mesh",
+        "material": "Road",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+        "bName": "Road",
+		    "Type": 0
+      }
+    }
+  ],
+
+  "EntryRoad": 
+  [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "EntryRoad.mesh",
+        "material": "EntryRoad",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+      "bName": "EntryRoad",
+		  "Type": 0
+      }
+    }
+  ],
+
+  "ExitRoad": 
+  [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "ExitRoad.mesh",
+        "material": "ExitRoad",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+      "bName": "ExitRoad",
+		  "Type": 0
+      }
+    }
+  ],
+  "Patitos": 
+   [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "Patitos.mesh",
+        "material": "Patitos",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+        "bName": "Patitos",
+		    "Type": 1
+      }
+    },
+	{
+	  "name": "Rigidbody",
+	  "mass": 0
+	}
+  ],
+  "Lanzadera": 
+   [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "Lanzadera.mesh",
+        "material": "MaterialLanzadera",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+        "bName": "Lanzadera",
+		    "Type": 1
+      }
+    },
+	{
+	  "name": "Rigidbody",
+	  "mass": 0
+	}
+  ],
+  "Burguer": 
+  [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "Burguer.mesh",
+        "material": "Burguer",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+        "bName": "Burguer",
+		    "Type": 2
+      }
+    },
+	{
+	  "name": "Rigidbody",
+	  "mass": 0
+	}    
+  ],
+  "Noria": 
+  [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "Noria.mesh",
+        "material": "NoriaTextCompleta",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+        "bName": "Noria",
+		    "Type": 2
+      }
+    },
+	{
+	  "name": "Rigidbody",
+	  "mass": 0
+	}    
+  ],
+  "WCPortatil": 
+  [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "WCPortatil.mesh",
+        "material": "MaterialWCPortatil",
+        "visible" : true
+      }
+    },
+    
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+        "bName": "WCPortatil",
+		"Type": 3
+      }
+    },
+	{
+	  "name": "Rigidbody",
+	  "mass": 0
+	}
+  ],
+  "HotDogTruck": 
+  [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "HotDog.mesh",
+        "material": "HotDogMaterial",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+        "bName": "HotDogTruck",
+		 "Type": 2
+      }
+    },
+	{
+	  "name": "Rigidbody",
+	  "mass": 0
+	}     
+  ],
+  "Entrada": 
+  [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "Entrada.mesh",
+        "material": "EntradaMaterial",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+        "bName": "Entrada",
+		"Type": 4
+      }
+    },
+	{
+	  "name": "Rigidbody",
+	  "mass": 0
+	}     
+  ],
+  "Muro": 
+  [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "Murito.mesh",
+        "material": "Murito",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+        "bName": "Muro",
+		"Type": 4
+      }
+    },
+	{
+	  "name": "Rigidbody",
+	  "mass": 0
+	}     
+  ],
+  "Esquina": 
+  [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "esquina.mesh",
+        "material": "esquinaTextura",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+        "bName": "Esquina",
+		"Type": 4
+      }
+    },
+	{
+	  "name": "Rigidbody",
+	  "mass": 0
+	}     
+  ],
+   "MuroHorz": 
+  [
+    {
+      "name": "Transform"
+    },
+    {
+      "name": "MeshRenderer",
+      "parameters":
+      {
+        "mesh": "MuroHorz.mesh",
+        "material": "Murito",
+        "visible" : true
+      }
+    },
+    {
+      "name": "Edificio",
+      "parameters":
+      {
+        "bName": "MuroHorz",
+		"Type": 4
+      }
+    },
+	{
+	  "name": "Rigidbody",
+	  "mass": 0
+	}     
+  ]
+}

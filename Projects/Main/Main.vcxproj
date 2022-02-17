@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A1700C0A-9839-4CBE-9482-0769E0F58935}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Main</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencias\physX-3.4\include;$(SolutionDir)Dependencias\ogre-1.11.5\Build\include;$(SolutionDir)Dependencias\ogre-1.11.5\OgreMain\include;$(SolutionDir)Src;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Exes</OutDir>
+    <TargetName>$(ProjectName)_Deb</TargetName>
+    <IntDir>$(SolutionDir)Inter\$(ProjectName)\$(Configuration)</IntDir>
+    <LibraryPath>$(SolutionDir)Dependencias\physX-3.4\lib;$(SolutionDir)Dependencias\ogre-1.11.5\Build\lib\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencias\ois-1.5\includes;$(SolutionDir)Dependencias\vld-2.5.1\include;$(SolutionDir)Dependencias\cegui-0.8.7\Build\cegui\include;$(SolutionDir)Dependencias\cegui-0.8.7\cegui\include;$(SolutionDir)Dependencias\fmod\studio\inc;$(SolutionDir)Dependencias\fmod\lowlevel\inc;$(SolutionDir)Dependencias\fmod\fsbank\inc;$(SolutionDir)Dependencias\bullet3-2.88\src;$(SolutionDir)Dependencias\ogre-1.11.5\Build\Dependencies\include\SDL2;$(SolutionDir)Dependencias\jsonParser;$(SolutionDir)Dependencias\ogre-1.11.5\Components\Terrain\include;$(SolutionDir)Dependencias\ogre-1.11.5\Build\include;$(SolutionDir)Dependencias\ogre-1.11.5\OgreMain\include;$(SolutionDir)Src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencias\ois-1.5\Build\Debug;$(SolutionDir)Dependencias\vld-2.5.1\lib\Win64;$(SolutionDir)Dependencias\cegui-0.8.7\Build\lib;$(SolutionDir)Dependencias\fmod\studio\lib;$(SolutionDir)Dependencias\fmod\fsbank\lib;$(SolutionDir)Dependencias\fmod\lowlevel\lib;$(SolutionDir)Dependencias\bullet3-2.88\build3\lib\Debug;$(SolutionDir)Dependencias\ogre-1.11.5\Build\Dependencies\lib;$(SolutionDir)Dependencias\ogre-1.11.5\Build\lib\Debug;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Exes</OutDir>
+    <IntDir>$(SolutionDir)Inter\$(ProjectName)\$(Configuration)</IntDir>
+    <TargetName>$(ProjectName)_Deb</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencias\physX-3.4\include;$(SolutionDir)Dependencias\ogre-1.11.5\Build\include;$(SolutionDir)Dependencias\ogre-1.11.5\OgreMain\include;$(SolutionDir)Src;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Exes</OutDir>
+    <IntDir>$(SolutionDir)Inter\$(ProjectName)\$(Configuration)</IntDir>
+    <LibraryPath>$(SolutionDir)Dependencias\physX-3.4\lib;$(SolutionDir)Dependencias\ogre-1.11.5\Build\lib\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencias\ois-1.5\includes;$(SolutionDir)Dependencias\vld-2.5.1\include;$(SolutionDir)Dependencias\cegui-0.8.7\Build\cegui\include;$(SolutionDir)Dependencias\cegui-0.8.7\cegui\include;$(SolutionDir)Dependencias\fmod\fsbank\inc;$(SolutionDir)Dependencias\fmod\studio\inc;$(SolutionDir)Dependencias\fmod\lowlevel\inc;$(SolutionDir)Dependencias\bullet3-2.88\src;$(SolutionDir)Dependencias\ogre-1.11.5\Build\Dependencies\include\SDL2;$(SolutionDir)Dependencias\jsonParser;$(SolutionDir)Dependencias\ogre-1.11.5\Components\Terrain\include;$(SolutionDir)Dependencias\ogre-1.11.5\Build\include;$(SolutionDir)Dependencias\ogre-1.11.5\OgreMain\include;$(SolutionDir)Src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencias\ois-1.5\Build\Release;$(SolutionDir)Dependencias\vld-2.5.1\lib\Win64;$(SolutionDir)Dependencias\cegui-0.8.7\Build\lib;$(SolutionDir)Dependencias\fmod\studio\lib;$(SolutionDir)Dependencias\fmod\lowlevel\lib;$(SolutionDir)Dependencias\fmod\fsbank\lib;$(SolutionDir)Dependencias\bullet3-2.88\build3\lib\Release;$(SolutionDir)Dependencias\ogre-1.11.5\Build\Dependencies\lib;$(SolutionDir)Dependencias\ogre-1.11.5\Build\lib\Release;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Exes</OutDir>
+    <IntDir>$(SolutionDir)Inter\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>$(Platform);_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OgreMain_d.lib;Winmm.lib;OpenGL32.lib;glut32.lib;PhysX3CommonDEBUG_x64.lib;PhysX3DEBUG_x64.lib;PhysX3ExtensionsDEBUG.lib;PhysX3CookingDEBUG_x64.lib;PhysX3CharacterKinematicDEBUG_x64.lib;PxTaskDEBUG_x64.lib;PxFoundationDEBUG_x64.lib;PsFastXmlDEBUG_x64.lib;PxPvdSDKDEBUG_x64.lib;UtilsDEBUG.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>$(Platform);_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalDependencies>OgreMain_d.lib;OgreTerrain_d.lib;OgrePaging_d.lib;PARKEngine_Deb.lib;SDL2.lib;SDL2main.lib;BulletDynamics_Debug.lib;BulletCollision_Debug.lib;LinearMath_Debug.lib;fmodL_vc.lib;fmodL64_vc.lib;fsbank_vc.lib;fsbank64_vc.lib;fmodstudioL_vc.lib;fmodstudioL64_vc.lib;CEGUIBase-0_d.lib;CEGUICommonDialogs-0_d.lib;CEGUICoreWindowRendererSet_d.lib;CEGUIOgreRenderer-0_d.lib;CEGUIExpatParser_d.lib;CEGUISILLYImageCodec_d.lib;vld.lib;OIS_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/WHOLEARCHIVE:PARKEngine_Deb.lib /WHOLEARCHIVE:Lógica_Deb.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>$(Platform);NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OgreMain.lib;Winmm.lib;OpenGL32.lib;glut32.lib;PhysX3Common_x64.lib;PhysX3_x64.lib;PhysX3Cooking_x64.lib;PhysX3CharacterKinematic_x64.lib;PhysX3Extensions.lib;PxTask_x64.lib;PxFoundation_x64.lib;PsFastXml_x64.lib;PxPvdSDK_x64.lib;Utils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>$(Platform);NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalDependencies>OgreMain.lib;OgreTerrain.lib;SDL2.lib;SDL2main.lib;OgrePaging.lib;PARKEngine.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;fmod_vc.lib;fmod64_vc.lib;fsbank_vc.lib;fsbank64_vc.lib;fmodstudio_vc.lib;fmodstudio64_vc.lib;CEGUIBase-0.lib;CEGUICommonDialogs-0.lib;CEGUICoreWindowRendererSet.lib;CEGUIExpatParser.lib;CEGUIOgreRenderer-0.lib;CEGUISILLYImageCodec.lib;OIS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/WHOLEARCHIVE:PARKEngine.lib /WHOLEARCHIVE:Lógica.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Main\Game.cpp" />
+    <ClCompile Include="..\..\Src\Main\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Main\Game.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lógica\Lógica.vcxproj">
+      <Project>{e8f42c5e-e9a0-4735-bbdb-b405fdf65574}</Project>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\PARKEngine\PARKEngine.vcxproj">
+      <Project>{9b5952b6-d23f-47c5-ad8d-22dee9e04b99}</Project>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

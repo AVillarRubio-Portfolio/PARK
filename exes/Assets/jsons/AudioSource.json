@@ -1,0 +1,67 @@
+{
+	"2DSounds":
+	[
+		{
+			"Id": "cochecitos",
+			"rute": "Assets\\Audio\\Cochecitos.mp3",
+			"loopCount": 0,
+			"Volume": 1,
+			"Pan": 0
+		},
+		{
+			"Id": "expl",
+			"rute": "Assets\\Audio\\Expl.mp3",
+			"loopCount": 0,
+			"Volume": 1,
+			"Pan": 0
+		},
+		{
+			"Id": "NPCIn",
+			"rute": "Assets\\Audio\\goInSound.ogg",
+			"loopCount": 0,
+			"Volume": 0.1,
+			"Pan": 0
+		}
+	],
+	"3DSounds":
+	[
+		{
+			"Id": "cochecitos3d",
+			"rute": "Assets\\Audio\\Cochecitos.mp3",
+			"loopCount": 0,
+			"Volume": 1,
+			"Pan": 0
+		},
+		{
+			"Id": "build3d",
+			"rute": "Assets\\Audio\\Build.wav",
+			"loopCount": 0,
+			"Volume": 1,
+			"Pan": 0
+		},
+		{
+			"Id": "money3d",
+			"rute": "Assets\\Audio\\Money.wav",
+			"loopCount": 0,
+			"Volume": 1,
+			"Pan": 0
+		}
+	],
+	"Songs":
+	[
+		{
+			"Id": "MainTheme",
+			"rute": "Assets\\Audio\\MainTheme.mp3",
+			"loopCount": -1,
+			"Volume": 1,
+			"Pan": 0
+		},
+		{
+			"Id": "Menu",
+			"rute": "Assets\\Audio\\Menu.mp3",
+			"loopCount": -1,
+			"Volume": 1,
+			"Pan": 0
+		}
+	]
+}

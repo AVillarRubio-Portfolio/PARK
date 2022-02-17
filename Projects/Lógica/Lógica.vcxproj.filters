@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Componentes">
+      <UniqueIdentifier>{c861ca7e-e8cd-42df-acd7-4c97df049dbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Componentes\Matrix">
+      <UniqueIdentifier>{3d01f28b-45e2-4425-9ec3-6bf52228dfea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{fac31122-4c05-48fd-8e8f-bae6d69a7990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Componentes\Construction">
+      <UniqueIdentifier>{59e26f8f-f9b7-4cd2-a1fb-f46b5c62ce94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Componentes\Cameras">
+      <UniqueIdentifier>{483d67be-6889-481b-8d79-9aac0f807a83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Lógica\NPC.cpp">
+      <Filter>Componentes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Lógica\BureaucracyManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Lógica\Matrix\Matrix.cpp">
+      <Filter>Componentes\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Lógica\Matrix\Node.cpp">
+      <Filter>Componentes\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Lógica\Reproductor.cpp">
+      <Filter>Componentes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Lógica\NPCManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Lógica\PriceTextBox.cpp">
+      <Filter>Componentes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Lógica\ConstructionMode.cpp">
+      <Filter>Componentes\Construction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Lógica\Edificio.cpp">
+      <Filter>Componentes\Construction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Lógica\DatosEdificio.cpp">
+      <Filter>Componentes\Construction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Lógica\ThirdPersonCamera.cpp">
+      <Filter>Componentes\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Lógica\FirstPersonCamera.cpp">
+      <Filter>Componentes\Cameras</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Lógica\NPC.h">
+      <Filter>Componentes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Lógica\BureaucracyManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Lógica\IndexPQ.h" />
+    <ClInclude Include="..\..\Src\Lógica\Matrix\Matrix.h">
+      <Filter>Componentes\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Lógica\Matrix\Node.h">
+      <Filter>Componentes\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Lógica\Reproductor.h">
+      <Filter>Componentes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Lógica\NPCManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Lógica\PriceTextBox.h">
+      <Filter>Componentes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Lógica\PARKMessages.h" />
+    <ClInclude Include="..\..\Src\Lógica\ConstructionMode.h">
+      <Filter>Componentes\Construction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Lógica\Edificio.h">
+      <Filter>Componentes\Construction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Lógica\DatosEdificio.h">
+      <Filter>Componentes\Construction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Lógica\ThirdPersonCamera.h">
+      <Filter>Componentes\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Lógica\FirstPersonCamera.h">
+      <Filter>Componentes\Cameras</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

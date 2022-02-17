@@ -1,0 +1,68 @@
+{
+"Keyboard":
+	[
+		{
+			"Id": "RotateLeft",
+			"key": "Q"
+		},
+		{
+			"Id": "RotateRight",
+			"key": "E"
+		},
+		{
+			"Id": "SpamNPC",
+			"key": "V"
+		},
+		{
+			"Id": "ExitConstruct",
+			"key": "ESC"
+		},
+		{
+			"Id": "ChangeCamera",
+			"key": "P"
+		},
+		{
+			"Id": "MoveForwards",
+			"key": "W"
+		},
+		{
+			"Id": "MoveBack",
+			"key": "S"
+		},
+		{
+			"Id": "MoveLeft",
+			"key": "A"
+		},
+		{
+			"Id": "MoveRight",
+			"key": "D"
+		},
+		{
+			"Id": "Jump",
+			"key": "Space"
+		}
+	],
+	"Mouse":
+	[
+		{
+			"Id": "Ray",
+			"key": "MB_Left"
+		},
+		{
+			"Id": "ConstructBuilding",
+			"key": "MB_Left"
+		},
+		{
+			"Id": "DeleteBuilding",
+			"key": "MB_Left"
+		},
+		{
+			"Id": "SelectNPC",
+			"key": "MB_Left"
+		},
+		{
+			"Id": "FinishConstruct",
+			"key": "MOUSE_RIGHT"
+		}
+	]
+}

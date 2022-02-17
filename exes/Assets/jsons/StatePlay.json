@@ -1,0 +1,1289 @@
+{
+  "Entities": [
+    {
+      "name": "Camera",
+      "Components": [
+        {
+          "name": "Camera"
+        },
+        {
+          "name": "Transform",
+          "position": {
+            "x": 0,
+            "y": 500,
+            "z": 500
+          }
+        },
+        {
+          "name": "Rigidbody",
+          "mass": 10,
+		  "dimensions":
+		  {
+			"x":5,
+			"y":10,
+			"z":5
+		  }
+        }
+      ]
+    },
+
+    {
+      "name": "MainMenuButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-14",
+          "callback": "onChangeState",
+          "parameter": "StateMainMenu",
+          "text": "MAIN MENU",
+          "posX": 0.8,
+          "posY": 0.8,
+          "sizeX": 100,
+          "sizeY": 50,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ConstructButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "Carnevalee Freakshow-22",
+          "callback": "setConstructPanelActive",
+          "parameter": "True",
+          "text": "CONSTRUIR",
+          "posX": 0.025,
+          "posY": 0.1,
+          "sizeX": 150,
+          "sizeY": 50,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "InfoButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "Carnevalee Freakshow-22",
+          "callback": "setInfoPanelActive",
+          "parameter": "True",
+          "text": "GESTION",
+          "posX": 0.50,
+          "posY": 0.1,
+          "sizeX": 150,
+          "sizeY": 50,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ToolsPanel",
+      "Components": [
+        {
+          "name": "FrameWindowBox",
+          "type": "Vanilla/FrameWindow",
+          "active": "True",
+          "closeEnabled": "False",
+          "titleEnabled": "False",
+          "font": "Carnevalee Freakshow-32",
+          "Hijos": [
+            {
+              "name": "ConstructButton"
+            },
+            {
+              "name": "InfoButton"
+            }
+          ],
+          "posX": 0.425,
+          "posY": 0.75,
+          "sizeX": 320,
+          "sizeY": 120,
+          "offsetX": -100,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "RoadButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "Carnevalee Freakshow-14",
+          "callback": "setRoadConstructionActive",
+          "parameter": "True",
+          "text": "CARRETERAS",
+          "posX": 0.01,
+          "posY": 0.05,
+          "sizeX": 120,
+          "sizeY": 40,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "AmusementButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "Carnevalee Freakshow-14",
+          "callback": "setAmusementsConstructionActive",
+          "parameter": "True",
+          "text": "ATRACCIONES",
+          "posX": 0.255,
+          "posY": 0.05,
+          "sizeX": 120,
+          "sizeY": 40,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "RestaurantButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "Carnevalee Freakshow-14",
+          "callback": "setRestaurantsConstructionActive",
+          "parameter": "True",
+          "text": "RESTAURANTES",
+          "posX": 0.50,
+          "posY": 0.05,
+          "sizeX": 120,
+          "sizeY": 40,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ToiletButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "Carnevalee Freakshow-14",
+          "callback": "setToiletsConstructionActive",
+          "parameter": "True",
+          "text": "W.C",
+          "posX": 0.745,
+          "posY": 0.05,
+          "sizeX": 120,
+          "sizeY": 40,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ConstructWCPortatilButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "construct",
+          "parameter": "WCPortatil",
+          "text": "WC PORTATIL",
+          "posX": 0.01,
+          "posY": 0.05,
+          "sizeX": 120,
+          "sizeY": 30,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "TextPriceWCPortatil",
+      "Components": [
+        {
+          "name": "PriceTextBox",
+          "bName": "Road",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-10",
+          "text": "25 $",
+          "alignText": "Centre",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.01,
+          "posY": 0.7,
+          "sizeX": 120,
+          "sizeY": 15,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ConstructPanel",
+      "Components": [
+        {
+          "name": "FrameWindowBox",
+          "type": "Vanilla/FrameWindow",
+          "active": "False",
+          "closeEnabled": "True",
+          "callback": "setConstructPanelActive",
+          "parameter": "False",
+          "titleEnabled": "True",
+          "title": "CONSTRUCCION",
+          "font": "Carnevalee Freakshow-22",
+          "Hijos": [
+            {
+              "name": "RoadButton"
+            },
+            {
+              "name": "AmusementButton"
+            },
+            {
+              "name": "RestaurantButton"
+            },
+            {
+              "name": "ToiletButton"
+            }
+          ],
+          "posX": 0.3,
+          "posY": 0.82,
+          "sizeX": 500,
+          "sizeY": 100,
+          "offsetX": -100,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ConstructRoadButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "construct",
+          "parameter": "Road",
+          "text": "CARRETERA NORMAL",
+          "posX": 0.01,
+          "posY": 0.05,
+          "sizeX": 120,
+          "sizeY": 30,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "TextPriceRoad",
+      "Components": [
+        {
+          "name": "PriceTextBox",
+          "bName": "Road",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-10",
+          "text": "1000 $",
+          "alignText": "Centre",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.01,
+          "posY": 0.7,
+          "sizeX": 120,
+          "sizeY": 15,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "RoadsScrollablePane",
+      "Components": [
+        {
+          "name": "ScrollablePaneBox",
+          "type": "TaharezLook/ScrollablePane",
+          "font": "DejaVuSans-10",
+          "Hijos": [
+            {
+              "name": "ConstructRoadButton"
+            },
+            {
+              "name": "TextPriceRoad"
+            }
+          ],
+          "posX": 0.0,
+          "posY": 0.0,
+          "sizeX": 500,
+          "sizeY": 60,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "RoadsPanel",
+      "Components": [
+        {
+          "name": "FrameWindowBox",
+          "type": "Vanilla/FrameWindow",
+          "active": "False",
+          "closeEnabled": "True",
+          "callback": "setRoadConstructionActive",
+          "parameter": "False",
+          "titleEnabled": "True",
+          "title": "CARRETERAS",
+          "font": "Carnevalee Freakshow-22",
+          "Hijos": [
+            {
+              "name": "RoadsScrollablePane"
+            }
+          ],
+          "posX": 0.3,
+          "posY": 0.81,
+          "sizeX": 500,
+          "sizeY": 110,
+          "offsetX": -100,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ConstructPatitosButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "construct",
+          "parameter": "Patitos",
+          "text": "PATITOS",
+          "posX": 0.01,
+          "posY": 0.05,
+          "sizeX": 120,
+          "sizeY": 30,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "TextPricePatitos",
+      "Components": [
+        {
+          "name": "PriceTextBox",
+          "bName": "Patitos",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-10",
+          "text": "1000 $",
+          "alignText": "Centre",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.01,
+          "posY": 0.7,
+          "sizeX": 120,
+          "sizeY": 15,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ConstructNoriaButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "construct",
+          "parameter": "Noria",
+          "text": "NORIA",
+          "posX": 0.255,
+          "posY": 0.05,
+          "sizeX": 120,
+          "sizeY": 30,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "TextPriceNoria",
+      "Components": [
+        {
+          "name": "PriceTextBox",
+          "bName": "Noria",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-10",
+          "text": "1000 $",
+          "alignText": "Centre",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.255,
+          "posY": 0.7,
+          "sizeX": 120,
+          "sizeY": 15,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ConstructLanzaderaButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "construct",
+          "parameter": "Lanzadera",
+          "text": "LANZADERA",
+          "posX": 0.5,
+          "posY": 0.05,
+          "sizeX": 120,
+          "sizeY": 30,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "TextPriceLanzadera",
+      "Components": [
+        {
+          "name": "PriceTextBox",
+          "bName": "Lanzadera",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-10",
+          "text": "700 $",
+          "alignText": "Centre",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.5,
+          "posY": 0.7,
+          "sizeX": 120,
+          "sizeY": 15,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "AmusementsScrollablePane",
+      "Components": [
+        {
+          "name": "ScrollablePaneBox",
+          "type": "TaharezLook/ScrollablePane",
+          "font": "DejaVuSans-10",
+          "Hijos": [
+            {
+              "name": "ConstructPatitosButton"
+            },
+            {
+              "name": "TextPricePatitos"
+            },
+            {
+              "name": "ConstructNoriaButton"
+            },
+            {
+              "name": "TextPriceNoria"
+            },
+            {
+              "name": "ConstructLanzaderaButton"
+            },
+            {
+              "name": "TextPriceLanzadera"
+            }
+          ],
+          "posX": 0.0,
+          "posY": 0.0,
+          "sizeX": 500,
+          "sizeY": 60,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "AmusementsPanel",
+      "Components": [
+        {
+          "name": "FrameWindowBox",
+          "type": "Vanilla/FrameWindow",
+          "active": "False",
+          "closeEnabled": "True",
+          "callback": "setAmusementsConstructionActive",
+          "parameter": "False",
+          "titleEnabled": "True",
+          "title": "ATRACCIONES",
+          "font": "Carnevalee Freakshow-22",
+          "Hijos": [
+            {
+              "name": "AmusementsScrollablePane"
+            }
+          ],
+          "posX": 0.3,
+          "posY": 0.81,
+          "sizeX": 500,
+          "sizeY": 110,
+          "offsetX": -100,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ConstructBurguerButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "construct",
+          "parameter": "Burguer",
+          "text": "BURGUER",
+          "posX": 0.01,
+          "posY": 0.05,
+          "sizeX": 120,
+          "sizeY": 30,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ConstructHotDogTruckButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "construct",
+          "parameter": "HotDogTruck",
+          "text": "HOTDOGTRUCK",
+          "posX": 0.255,
+          "posY": 0.05,
+          "sizeX": 120,
+          "sizeY": 30,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "TextPriceHotDogTruck",
+      "Components": [
+        {
+          "name": "PriceTextBox",
+          "bName": "HotDogTruck",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-10",
+          "text": "1000 $",
+          "alignText": "Centre",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.255,
+          "posY": 0.7,
+          "sizeX": 120,
+          "sizeY": 15,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "TextPriceBurger",
+      "Components": [
+        {
+          "name": "PriceTextBox",
+          "bName": "Burguer",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-10",
+          "text": "1000 $",
+          "alignText": "Centre",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.01,
+          "posY": 0.7,
+          "sizeX": 120,
+          "sizeY": 15,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "RestaurantsScrollablePane",
+      "Components": [
+        {
+          "name": "ScrollablePaneBox",
+          "type": "TaharezLook/ScrollablePane",
+          "font": "DejaVuSans-10",
+          "Hijos": [
+            {
+              "name": "ConstructBurguerButton"
+            },
+            {
+              "name": "TextPriceBurger"
+            },
+			{
+              "name": "ConstructHotDogTruckButton"
+            },
+            {
+              "name": "TextPriceHotDogTruck"
+            }
+          ],
+          "posX": 0.0,
+          "posY": 0.0,
+          "sizeX": 500,
+          "sizeY": 60,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "RestaurantsPanel",
+      "Components": [
+        {
+          "name": "FrameWindowBox",
+          "type": "Vanilla/FrameWindow",
+          "active": "False",
+          "closeEnabled": "True",
+          "callback": "setRestaurantsConstructionActive",
+          "parameter": "False",
+          "titleEnabled": "True",
+          "title": "RESTAURANTES",
+          "font": "Carnevalee Freakshow-22",
+          "Hijos": [
+            {
+              "name": "RestaurantsScrollablePane"
+            }
+          ],
+          "posX": 0.3,
+          "posY": 0.81,
+          "sizeX": 500,
+          "sizeY": 110,
+          "offsetX": -100,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ToiletsScrollablePane",
+      "Components": [
+        {
+          "name": "ScrollablePaneBox",
+          "type": "TaharezLook/ScrollablePane",
+          "font": "DejaVuSans-10",
+          "Hijos": [
+            {
+              "name" : "ConstructWCPortatilButton"
+            },
+            {
+              "name" : "TextPriceWCPortatil"
+            }
+          ],
+          "posX": 0.0,
+          "posY": 0.0,
+          "sizeX": 500,
+          "sizeY": 60,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ToiletsPanel",
+      "Components": [
+        {
+          "name": "FrameWindowBox",
+          "type": "Vanilla/FrameWindow",
+          "active": "False",
+          "closeEnabled": "True",
+          "callback": "setToiletsConstructionActive",
+          "parameter": "False",
+          "titleEnabled": "True",
+          "title": "W.C",
+          "font": "Carnevalee Freakshow-22",
+          "Hijos": [
+            {
+              "name": "ToiletsScrollablePane"
+            }
+          ],
+          "posX": 0.3,
+          "posY": 0.81,
+          "sizeX": 500,
+          "sizeY": 100,
+          "offsetX": -100,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "TextDinero",
+      "Components": [
+        {
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "Carnevalee Freakshow-40",
+          "text": "Dinero: 143",
+          "alignText": "Left",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.015,
+          "posY": 0.005,
+          "sizeX": 400,
+          "sizeY": 75,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "InfoDinero",
+      "Components": [
+        {
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "Jura-18",
+          "text": "Dinero actual: 2000 $",
+          "alignText": "Left",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.05,
+          "posY": 0.0,
+          "sizeX": 400,
+          "sizeY": 75,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "InfoNumPersonas",
+      "Components": [
+        {
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "Jura-18",
+          "text": "Visitantes Actuales: 0",
+          "alignText": "Left",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.05,
+          "posY": 0.1,
+          "sizeX": 400,
+          "sizeY": 75,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+	{
+      "name": "infoNumPersonasTotales_",
+      "Components": [
+        {
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "Jura-18",
+          "text": "Visitantes Totales Del Parque: 0",
+          "alignText": "Left",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.05,
+          "posY": 0.2,
+          "sizeX": 400,
+          "sizeY": 75,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "InfoPanel",
+      "Components": [
+        {
+          "name": "FrameWindowBox",
+          "type": "Vanilla/FrameWindow",
+          "active": "False",
+          "closeEnabled": "True",
+          "callback": "setInfoPanelActive",
+          "parameter": "False",
+          "titleEnabled": "True",
+          "title": "GESTION DEL P.A.R.K",
+          "font": "Carnevalee Freakshow-32",
+          "Hijos": [
+            {
+              "name": "InfoDinero"
+            },
+            {
+              "name": "InfoNumPersonas"
+            },
+			{
+              "name": "infoNumPersonasTotales_"
+            }
+          ],
+          "posX": 0.3,
+          "posY": 0.1,
+          "sizeX": 500,
+          "sizeY": 500,
+          "offsetX": -100,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "FunImage",
+      "Components": [
+        {
+          "name": "ImageBox",
+          "type": "Vanilla/StaticImage",
+          "font": "DejaVuSans-10",
+          "imageName": "happyIcon.png",
+          "posX": 0.01,
+          "posY": 0.05,
+          "sizeX": 20,
+          "sizeY": 20,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "FunBar",
+      "Components": [
+        {
+          "name": "ProgressBar",
+          "type": "Vanilla/ProgressBar",
+          "font": "Carnevalee Freakshow-32",
+          "BarColor": "FF1D9E53",
+          "posX": 0.2,
+          "posY": 0.05,
+          "sizeX": 110,
+          "sizeY": 20,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "HungerImage",
+      "Components": [
+        {
+          "name": "ImageBox",
+          "type": "Vanilla/StaticImage",
+          "font": "DejaVuSans-10",
+          "imageName": "burgerIcon.png",
+          "posX": 0.01,
+          "posY": 0.3,
+          "sizeX": 20,
+          "sizeY": 20,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "HungerBar",
+      "Components": [
+        {
+          "name": "ProgressBar",
+          "type": "Vanilla/ProgressBar",
+          "font": "Carnevalee Freakshow-32",
+          "BarColor": "FFFF3535",
+          "posX": 0.2,
+          "posY": 0.3,
+          "sizeX": 110,
+          "sizeY": 20,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "PeePeeImage",
+      "Components": [
+        {
+          "name": "ImageBox",
+          "type": "Vanilla/StaticImage",
+          "font": "DejaVuSans-10",
+          "imageName": "toiletIcon.png",
+          "posX": 0.01,
+          "posY": 0.55,
+          "sizeX": 20,
+          "sizeY": 20,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "PeePeeBar",
+      "Components": [
+        {
+          "name": "ProgressBar",
+          "type": "Vanilla/ProgressBar",
+          "font": "Carnevalee Freakshow-32",
+          "BarColor": "FF3578FF",
+          "posX": 0.2,
+          "posY": 0.55,
+          "sizeX": 110,
+          "sizeY": 20,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+	 {
+      "name": "LastAttractionText",
+      "Components": [
+        {
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-10",
+          "text": "Viene de: ",
+          "alignText": "Left",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.01,
+          "posY": 0.8,
+          "sizeX": 159,
+          "sizeY": 20,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "NPCInfoPanel",
+      "Components": [
+        {
+          "name": "FrameWindowBox",
+          "type": "Vanilla/FrameWindow",
+          "active": "True",
+          "closeEnabled": "True",
+          "callback": "setNPCInfoPanelActive",
+          "parameter": "False",
+          "titleEnabled": "True",
+          "title": "Juan",
+          "font": "Carnevalee Freakshow-22",
+          "Hijos": [
+            {
+              "name": "FunBar"
+            },
+            {
+              "name": "FunImage"
+            },
+            {
+              "name": "HungerBar"
+            },
+            {
+              "name": "HungerImage"
+            },
+            {
+              "name": "PeePeeBar"
+            },
+            {
+              "name": "PeePeeImage"
+            },
+			{
+			  "name": "LastAttractionText"
+			}
+          ],
+          "posX": 0.75,
+          "posY": 0.05,
+          "sizeX": 160,
+          "sizeY": 140,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "TextDelete",
+      "Components": [
+        {
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-14",
+          "text": "Modo Destruir Activo",
+          "alignText": "Left",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.05,
+          "posY": 0.9,
+          "sizeX": 170,
+          "sizeY": 30,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "DeleteBuildingButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "DejaVuSans-10",
+          "callback": "setDeleteBuildingActive",
+          "parameter": "",
+          "text": "DESTRUIR",
+          "posX": 0.1,
+          "posY": 0.85,
+          "sizeX": 80,
+          "sizeY": 30,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ReproductorAudio",
+      "Components": [
+        {
+          "name": "Reproductor"
+        }
+      ]
+    },
+    {
+      "name": "Terrain",
+      "Components": [
+        {
+          "name": "Terrain",
+          "file": "Maps.json",
+          "Listeners": [
+            {
+              "name": "Camera"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ConstructionMode",
+      "Components": [
+        {
+          "name": "ConstructionMode",
+          "Listeners": [
+            {
+              "name": "Reproductor"
+            }
+          ],
+          "BuildingsNames": [
+            "Empty",
+            "Road",
+            "Toilet",
+            "Patitos",
+            "Burguer",
+            "EntryRoad",
+            "ExitRoad"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Matrix",
+      "Components": [
+        {
+          "name": "Matrix",
+          "file": "Matrix.json"
+        }
+      ]
+    },
+    {
+      "name": "BureauCrazyManager",
+      "Components": [
+        {
+          "name": "BureauCrazyManager",
+          "Taxes": [
+            {
+              "Type": "ELECTRIC",
+              "Id": 0,
+              "Amount": 7
+            },
+            {
+              "Type": "MAINTEINANCE",
+              "Id": 1,
+              "Amount": 15
+            }
+          ],
+          "BankRuptcy": {
+            "ruptcyMaxTime": 7,
+            "floorRuptcyMoney": -40,
+            "InitialTime2Tax": 180,
+            "ActualMoney": 10000,
+            "InitVisitors": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "TextTimer",
+      "Components": [
+        {
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "Carnevalee Freakshow-40",
+          "text": "Tiempo de juego: ",
+          "alignText": "Left",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.42,
+          "posY": 0.005,
+          "sizeX": 400,
+          "sizeY": 75,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "TextNextTax",
+      "Components": [
+        {
+          "name": "TextBox",
+          "type": "Vanilla/StaticText",
+          "font": "DejaVuSans-14",
+          "text": "Sig. Impuesto:  ",
+          "alignText": "Left",
+          "backgroundEnabled": "False",
+          "textColor": {
+            "topLeft": "FFFF0000",
+            "topRight": "FFFF0000",
+            "botLeft": "FFFF0000",
+            "botRight": "FFFF0000"
+          },
+          "posX": 0.27,
+          "posY": 0.06,
+          "sizeX": 400,
+          "sizeY": 75,
+          "offsetX": 0,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "CameraManager",
+      "Components": [
+        {
+          "name": "ThirdPersonCamera",
+          "maxHeigth": 1000,
+          "minHeigth": 20,
+          "borders": 0.02,
+          "Listeners": [
+            {
+              "name": "BureauCrazyManager"
+            }
+          ]
+        },
+        {
+          "name": "FirstPersonCamera",
+          "Listeners": [
+            {
+              "name": "BureauCrazyManager"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "name": "NPCManager",
+      "Components": [
+        {
+          "name": "NPCManager",
+          "enterTime": 5,
+          "Listeners": [
+            {
+              "name": "BureauCrazyManager"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DatosEdificios",
+      "Components": [
+        {
+          "name": "DatosEdificio"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9B5952B6-D23F-47C5-AD8D-22DEE9E04B99}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Main</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectName>PARKEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencias\ogre-1.11.5\Build\include;$(SolutionDir)Dependencias\ogre-1.11.5\OgreMain\include;$(SolutionDir)Src;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Libs\$(Configuration)</OutDir>
+    <TargetName>$(ProjectName)_Deb</TargetName>
+    <IntDir>$(SolutionDir)Inter\$(ProjectName)\$(Configuration)</IntDir>
+    <LibraryPath>$(SolutionDir)Dependencias\ogre-1.11.5\Build\lib\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Libs\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)Inter\$(ProjectName)\$(Configuration)</IntDir>
+    <TargetName>$(ProjectName)_Deb</TargetName>
+    <IncludePath>$(SolutionDir)Dependencias\fmod\lowlevel\inc;$(SolutionDir)Dependencias\fmod\fsbank\inc;$(SolutionDir)Dependencias\fmod\studio\inc;$(SolutionDir)Dependencias\ois-1.5\includes;$(SolutionDir)Dependencias\cegui-0.8.7\Build\cegui\include;$(SolutionDir)Dependencias\cegui-0.8.7\cegui\include;$(SolutionDir)Dependencias\ogre-1.11.5\Components\Terrain\include;$(SolutionDir)Dependencias\bullet3-2.88\src;$(SolutionDir)Dependencias\jsonParser;$(SolutionDir)Dependencias\ogre-1.11.5\Build\include;$(SolutionDir)Dependencias\ogre-1.11.5\OgreMain\include;$(SolutionDir)Src;$(SolutionDir)Dependencias\ogre-1.11.5\Build\Dependencies\include\SDL2;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencias\fmod\lowlevel\lib;$(SolutionDir)Dependencias\fmod\studio\lib;$(SolutionDir)Dependencias\fmod\fsbank\lib;$(SolutionDir)Dependencias\ois-1.5\Build\Debug;$(SolutionDir)Dependencias\cegui-0.8.7\Build\lib;$(SolutionDir)Dependencias\bullet3-2.88\build3\lib\Debug;$(SolutionDir)Dependencias\ogre-1.11.5\Build\lib\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Dependencias\ogre-1.11.5\Build\include;$(SolutionDir)Dependencias\ogre-1.11.5\OgreMain\include;$(SolutionDir)Src;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Libs\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)Inter\$(ProjectName)\$(Configuration)</IntDir>
+    <LibraryPath>$(SolutionDir)Dependencias\ogre-1.11.5\Build\lib\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Libs\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)Inter\$(ProjectName)\$(Configuration)</IntDir>
+    <IncludePath>$(SolutionDir)Dependencias\fmod\fsbank\inc;$(SolutionDir)Dependencias\fmod\lowlevel\inc;$(SolutionDir)Dependencias\fmod\studio\inc;$(SolutionDir)Dependencias\ois-1.5\includes;$(SolutionDir)Dependencias\cegui-0.8.7\Build\cegui\include;$(SolutionDir)Dependencias\cegui-0.8.7\cegui\include;$(SolutionDir)Dependencias\ogre-1.11.5\Components\Terrain\include;$(SolutionDir)Dependencias\bullet3-2.88\src;$(SolutionDir)Dependencias\jsonParser;$(SolutionDir)Dependencias\ogre-1.11.5\Build\include;$(SolutionDir)Dependencias\ogre-1.11.5\OgreMain\include;$(SolutionDir)Src;$(SolutionDir)Dependencias\ogre-1.11.5\Build\Dependencies\include\SDL2;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencias\fmod\lowlevel\lib;$(SolutionDir)Dependencias\fmod\studio\lib;$(SolutionDir)Dependencias\fmod\fsbank\lib;$(SolutionDir)Dependencias\ois-1.5\Build\Release;$(SolutionDir)Dependencias\cegui-0.8.7\Build\lib;$(SolutionDir)Dependencias\bullet3-2.88\build3\lib\Release;$(SolutionDir)Dependencias\ogre-1.11.5\Build\lib\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OgreMain_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OgreMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\PARKEngine\Animation.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\AudioManager.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\Button.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\CallbackManager.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\Camera.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\Component.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\Entity.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\EntityFactory.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\FrameWindowBox.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\GameState.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\HUDManager.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\ImageBox.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\InputManager.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\MeshRenderer.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\OgreManager.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\PhysicsManager.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\ResourceManager.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\Rigidbody.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\SceneManager.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\BackgroundImage.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\ProgressBar.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\ScrollablePaneBox.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\Terrain.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\TerrainCreator.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\TextBox.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\Transform.cpp" />
+    <ClCompile Include="..\..\Src\PARKEngine\Widget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\PARKEngine\Animation.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\AudioManager.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\Button.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\CallbackManager.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\Camera.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\Component.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\ComponentCreator.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\Entity.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\EntityFactory.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\FrameWindowBox.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\GameState.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\HUDManager.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\ImageBox.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\InputManager.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\MeshRenderer.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\Messages.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\OgreIncludes.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\OgreManager.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\OISIncludes.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\PARKComponents.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\PARKEngine.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\PARKFoundation.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\PARKManagers.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\PhysicsManager.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\ResourceManager.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\Rigidbody.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\SceneManager.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\BackgroundImage.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\ProgressBar.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\ScrollablePaneBox.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\Terrain.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\TerrainCreator.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\TextBox.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\Transform.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\Utils.h" />
+    <ClInclude Include="..\..\Src\PARKEngine\Widget.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

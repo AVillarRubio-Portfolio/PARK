@@ -1,0 +1,30 @@
+material SkyBox
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.0 1.0 1.0
+			texture_unit {
+				texture clouds.jpg
+				scroll_anim 0.1 0.0
+				colour_op modulate
+			}
+		}
+	}
+}
+
+material Tierra
+{
+	technique
+	{
+		pass
+		{
+			diffuse 1.0 1.0 1.0
+			texture_unit {
+				texture grass.PNG
+				colour_op modulate
+			}
+		}
+	}
+}

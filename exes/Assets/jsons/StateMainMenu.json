@@ -1,0 +1,90 @@
+{
+  "Entities": [
+    {
+      "name": "Camera",
+      "Components": [
+        {
+          "name": "Camera"
+        },
+        {
+          "name": "Transform",
+          "position": {
+            "x": 0,
+            "y": 500,
+            "z": 50
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 3,
+            "z": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "name": "PlayStateButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "Carnevalee Freakshow-32",
+          "callback": "onChangeState",
+          "parameter": "StatePlay",
+          "text": "PLAY",
+          "posX": 0.5,
+          "posY": 0.2,
+          "sizeX": 200,
+          "sizeY": 50,
+          "offsetX": -100,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "ExitButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "Carnevalee Freakshow-32",
+          "callback": "onExit",
+          "text": "EXIT",
+          "posX": 0.5,
+          "posY": 0.7,
+          "sizeX": 200,
+          "sizeY": 50,
+          "offsetX": -100,
+          "offsetY": 0
+        }
+      ]
+    },
+    {
+      "name": "OptionsButton",
+      "Components": [
+        {
+          "name": "Button",
+          "type": "Vanilla/Button",
+          "font": "Carnevalee Freakshow-32",
+          "callback": "onChangeState",
+          "parameter": "StateOptions",
+          "text": "OPTIONS",
+          "posX": 0.5,
+          "posY": 0.45,
+          "sizeX": 200,
+          "sizeY": 50,
+          "offsetX": -100,
+          "offsetY": 0 
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "Components": [
+        {
+          "name":  "BackgroundImage",
+          "ImageName": "MainMenuBack.jpg"
+        }
+      ]
+    }
+  ]
+}

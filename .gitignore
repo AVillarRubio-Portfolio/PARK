@@ -1,0 +1,34 @@
+### Archivos a ignorar ###
+# Archivos de usuario
+*.user
+*.log
+
+## Directorios intermedios, librerías y archivos de configuración
+[Ii]nter/
+[Ee]xes/*
+![Ee]xes/plugins.cfg
+![Ee]xes/plugins_d.cfg
+![Ee]xes/resources.cfg
+![Ee]xes/resources_d.cfg
+![Ee]xes/Assets/
+[Ll]ibs/
+
+## Dependencias
+[Dd]ependencias/ogre-1.11.5/Build/
+[Dd]ependencias/bullet3-2.88/build3/
+[Dd]ependencias/cegui-0.8.7/Build/
+[Dd]ependencias/ois-1.5/Build/
+[Dd]ependencias/fmod
+[Cc]make-3.14.0-rc1-win64-x64/
+
+## .vs generado de visual
+.vs/
+
+## Por si se compila en x64 sin querer y no se borra
+x64/
+
+## Otros
+*.db
+*.opendb
+
+

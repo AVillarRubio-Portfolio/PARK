@@ -1,0 +1,33 @@
+{
+	"maps":
+	[
+	  	{
+		  	"name": "Map1",
+
+		    "terrainName": "terrain",
+		    "terrainNameExt": "dat",
+
+		    "minHeight0": 20,
+		    "fadeDist0": 40,
+		    "minHeight1": 250,
+		    "fadeDist1": 15,
+
+		    "terrainSize": 129,
+		    "worldSize": 4000.0,
+		    "inputScale": 600,
+		    "minBatchSize": 9,
+		    "maxBatchSize": 17,
+
+		    "layerListSize": 3,
+		    "layerWorldSizeList": [30, 100, 200],
+		    "diffuseSpecularTexturesNames": ["terrainGrass.jpg", 
+		    	"terrainDirt.jpg", 
+		    	"terrainSnow.jpg"],
+		    "normalHeightTexturesNames": ["dirt_grayrocky_normalheight.dds",
+		    	"grass_green-01_normalheight.dds", 
+		    	"growth_weirdfungus-03_normalheight.dds"],
+
+		    "terrainImage": "terrain.png"
+		}
+	]
+}

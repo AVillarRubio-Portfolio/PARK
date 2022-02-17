@@ -1,0 +1,340 @@
+{
+"Edificios":
+	[
+        {
+            "parameters":
+            {
+                "bName": "Road",
+                "Price": 100,
+                "LockedPrice": 300,
+                "Locked": false,
+                "Type": 0,
+                "Tam":
+                {
+                  "x": 1,
+                  "y": 1
+                },
+                "Height": 1
+            }
+        },
+        {
+            "parameters":
+            {
+                "bName": "ExitRoad",
+                "Price": 0,
+                "Type": 0,
+                "Tam":
+                {
+                  "x": 1,
+                  "y": 1
+                },
+                "Height": 1,
+                "bName": "ExitRoad"
+            }
+        },
+        {
+            "parameters":
+            {
+                "bName": "EntryRoad",
+                "Price": 0,
+                "Type": 0,
+                "Tam":
+                {
+                  "x": 1,
+                  "y": 1
+                },
+                "Height": 1
+            }
+        },
+        {
+            "parameters":
+            {
+                "bName": "Patitos",
+                "Price": 200,
+				"EntryCost": 30,
+                "LockedPrice": 600,
+                "Locked": false,
+                "Type": 1,
+                "PeePee": 0,
+                "Hungry": 0,
+                "Fun": 10,
+                "Tam_Cola": 10,
+                "Tam":
+                {
+                  "x": 2,
+                  "y": 2
+                },
+                "Height": 60,
+                "Entry":
+                {
+                  "x": 0,
+                  "y": 2
+                },
+                "Exit":
+                {
+                  "x": 2,
+                  "y": 0
+                },
+                "Duration": 8,
+                "Capacity": 5
+            }
+        },
+        {
+          "parameters":
+          {
+              "bName": "WCPortatil",
+              "Price": 25,
+			  "EntryCost": 5,
+              "LockedPrice": 0,
+              "Locked": false,
+              "Type": 3,
+              "PeePee": 15,
+              "Hungry": 0,
+              "Fun": 0,
+              "Tam_Cola": 4,
+              "Tam":
+              {
+                "x": 1,
+                "y": 1
+              },
+              "Height": 60,
+              "Entry":
+              {
+                "x": 0,
+                "y": 1
+              },
+              "Exit":
+              {
+                "x": 1,
+                "y": 0
+              },
+              "Duration": 5,
+              "Capacity": 1
+          }
+      },
+        {
+            "parameters":
+            {
+              "bName": "Noria",
+              "Price": 400,
+			  "EntryCost": 50,
+              "LockedPrice": 1200,
+              "Locked": true,
+              "Type": 1,
+              "PeePee": 0,
+              "Hungry": 0,
+              "Fun": 20,
+              "Tam_Cola": 5,
+              "Tam":
+              {
+                "x": 2,
+                "y": 2
+              },
+              "Height": 20,
+              "Entry":
+              {
+                "x": 2,
+                "y": 0
+              },
+              "Exit":
+              {
+                "x": 2,
+                "y": 1
+              },
+              "Duration": 5,
+              "Capacity": 2
+            }
+        },
+        {
+          "parameters":
+          {
+            "bName": "Lanzadera",
+            "Price": 500,
+			"EntryCost": 60,
+            "LockedPrice": 700,
+            "Locked": false,
+            "Type": 1,
+            "PeePee": -5,
+            "Hungry": 0,
+            "Fun": 20,
+            "Tam_Cola": 5,
+            "Tam":
+            {
+              "x": 2,
+              "y": 2
+            },
+            "Height": 30,
+            "Entry":
+            {
+              "x": 2,
+              "y": 0
+            },
+            "Exit":
+            {
+              "x": 2,
+              "y": 1
+            },
+            "Duration": 5,
+            "Capacity": 2
+          }
+      },
+        {
+            "parameters":
+            {
+                "bName": "Burguer",
+                "Price": 200,
+				"EntryCost": 25,
+                "LockedPrice": 600,
+                "Locked": false,
+                "Type": 2,
+                "PeePee": 0,
+                "Hungry": 10,
+                "Fun": 0,
+                "Tam_Cola": 5,
+                "Tam":
+                {
+                  "x": 2,
+                  "y": 2
+                },
+                "Height": 20,
+                "Entry":
+                {
+                  "x": 2,
+                  "y": 0
+                },
+                "Exit":
+                {
+                  "x": 2,
+                  "y": 1
+                },
+                "Duration": 5,
+                "Capacity": 2
+            }
+        },
+		 {
+            "parameters":
+            {
+                "bName": "HotDogTruck",
+                "Price": 250,
+				"EntryCost": 25,
+                "LockedPrice": 800,
+                "Locked": false,
+                "Type": 2,
+                "PeePee": 0,
+                "Hungry": 12,
+                "Fun": 0,
+                "Tam_Cola": 5,
+                "Tam":
+                {
+                  "x": 2,
+                  "y": 2
+                },
+                "Height": 20,
+                "Entry":
+                {
+                  "x": 2,
+                  "y": 0
+                },
+                "Exit":
+                {
+                  "x": 2,
+                  "y": 1
+                },
+                "Duration": 5,
+                "Capacity": 2
+            }
+        },
+		 {
+            "parameters":
+            {
+                "bName": "Entrada",
+                "Type": 4,
+                "Tam":
+                {
+                  "x": 3,
+                  "y": 8
+                },
+                "Height": 40,
+                "Entry":
+                {
+                  "x": 2,
+                  "y": 0
+                },
+                "Exit":
+                {
+                  "x": 2,
+                  "y": 1
+                }
+            }
+        },
+		{
+            "parameters":
+            {
+                "bName": "Muro",
+                "Type": 4,
+                "Tam":
+                {
+                  "x": 1,
+                  "y": 1
+                },
+                "Height": 0,
+                "Entry":
+                {
+                  "x": 2,
+                  "y": 0
+                },
+                "Exit":
+                {
+                  "x": 2,
+                  "y": 1
+                }
+            }
+        },
+		{
+            "parameters":
+            {
+                "bName": "Esquina",
+                "Type": 4,
+                "Tam":
+                {
+                  "x": 1,
+                  "y": 1
+                },
+                "Height": 0,
+                "Entry":
+                {
+                  "x": 2,
+                  "y": 0
+                },
+                "Exit":
+                {
+                  "x": 2,
+                  "y": 1
+                }
+            }
+        },
+		{
+            "parameters":
+            {
+                "bName": "MuroHorz",
+                "Type": 4,
+                "Tam":
+                {
+                  "x": 1,
+                  "y": 1
+                },
+                "Height": 0,
+                "Entry":
+                {
+                  "x": 2,
+                  "y": 0
+                },
+                "Exit":
+                {
+                  "x": 2,
+                  "y": 1
+                }
+            }
+        }
+    ]
+}
